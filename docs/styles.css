@@ -1,0 +1,52 @@
+:root {
+  --primary-blue: #4a90e2;
+  --text-color: #333;
+  --white: #ffffff;
+
+  --font-family: Arial, sans-serif;
+  --font-size: 16px;
+
+  --spacing: 1rem;
+  --radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+#loginInfo {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing);
+}
+
+#loginInfo h1 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+#loginInfo p {
+  font-size: 1rem;
+  max-width: 80%;
+}
+
+#loginForm {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
