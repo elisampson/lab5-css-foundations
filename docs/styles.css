@@ -1,6 +1,6 @@
 :root {
-  --primary-blue: #4a90e2;
-  --primary-blue-dark: #357ac9;
+  --primary-blue: #4a8df7;       
+  --primary-blue-dark: #1e56d9;
   --text-color: #333;
   --white: #ffffff;
   --font-family: Arial, sans-serif;
@@ -87,9 +87,9 @@ button, input {
 
 input:focus {
   border-color: var(--primary-blue);
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.25);
   outline: none;
 }
-
 
 form-field:last-of-type {
   position: relative;
@@ -109,6 +109,8 @@ form-field:last-of-type button {
 
 form-field:last-of-type button:hover {
   background-color: var(--primary-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 password-recovery {
